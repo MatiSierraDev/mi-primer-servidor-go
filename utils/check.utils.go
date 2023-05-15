@@ -36,8 +36,6 @@ func CheckTaskId(taskId string) bool {
 // prueba de valores por parametro por defecto
 func CheckId(o Options) bool {
 
-	// ot := &Options{IdUser: o.IdUser, IdTask: o.IdTask}
-
 	if o.IdTask != nil {
 		var task models.Task
 		db.DB.First(&task, o.IdTask)
